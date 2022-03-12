@@ -2,8 +2,8 @@
 
 require_relative "ruby/version"
 
-module Ruby
-  module Cohere
+module Cohere
+  module Ruby
     class Error < StandardError; end
   end
 end
