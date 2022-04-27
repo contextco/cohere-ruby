@@ -17,7 +17,7 @@ module Ruby
       options.texts.each_slice(5) do |batch|
         threads << Thread.new { post(endpoint: "embed", model: model, options: options.merge({ texts: batch })) }
       end
-      threads.each { |t| t.join }
+      threads.each(&:join)
     end
 
     def generate(model:, options:)
