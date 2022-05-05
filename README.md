@@ -16,7 +16,60 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+    client = Cohere::Client.new access_token: "<COHERE_ACCESS_TOKEN>"
+```
+
+### Embed
+
+See full docs [here](https://docs.cohere.ai/embed-reference).
+
+- **texts**: `array of strings` - *required*
+- **truncate**: `Accepts "NONE", "LEFT" or "RIGHT`, default `NONE` - *optional*
+
+```ruby
+    client.embed(model: "medium",
+                               options: { texts: ["When are you open?", "When do you close?", "What are the hours?",
+                                                  "Are you open on weekends?", "Are you available on holidays?"] })
+```
+
+### Classify
+
+See full docs [here](https://docs.cohere.ai/classify-reference).
+
+- inputs: `array of strings` - *required*
+- examples: `array of {label:{},text:{}}` - *required*
+- outputIndicator: `string` - *optional*
+- taskDescription: `string` - *optional*
+  
+```ruby
+    client.classify(model: "medium",
+                    options: { inputs: [ "This item was broken when it arrived", "This item broke after 3 weeks" ], 
+                    examples: [ 
+                        { text: "The order came 5 days early", label: "positive" },
+                        { text: "The item exceeded my expectations", label: "positive" }
+                    ]})
+```
+
+### Generate
+
+See full docs [here](https://docs.cohere.ai/generate-reference).
+
+- prompt: `string` - *required*
+- temperature: `number`. Default `0.75` - *optional*
+- p: `number`. Default `0.75` - *optional*
+- k: `number`. Default `0` - *optional*
+- frequency_penalty: `number`. Default `0` - *optional*
+- presence_penalty: `number`. Default `0` - *optional*
+- max_tokens: `number`. Default `50` - *optional*
+- stop_sequences: `array of strings` - *optional*
+- return_likelihoods: `GENERATION|ALL|NONE`. Default `NONE` - *optional*
+- num_generations: `number`. Default `1` - *optional*
+
+
+```ruby
+    client.generate(model: "medium", options: { prompt: "What is your name?" })
+```
 
 ## Development
 
