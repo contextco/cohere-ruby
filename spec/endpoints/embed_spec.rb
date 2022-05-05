@@ -5,7 +5,7 @@ RSpec.describe Cohere::Client do
 
   describe "Embed endpoint" do
     it "fails when no texts are given" do
-      response = @client.embed(model: "small", options: {})
+      response = @client.embed(model: "small", options: { texts: [] })
       expect(response.code).to eq(400)
     end
 
