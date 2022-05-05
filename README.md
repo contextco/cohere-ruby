@@ -29,8 +29,8 @@ See full docs [here](https://docs.cohere.ai/embed-reference).
 
 ```ruby
     client.embed(model: "medium",
-                               options: { texts: ["When are you open?", "When do you close?", "What are the hours?",
-                                                  "Are you open on weekends?", "Are you available on holidays?"] })
+                options: { texts: ["When are you open?", "When do you close?", "What are the hours?",
+                                    "Are you open on weekends?", "Are you available on holidays?"] })
 ```
 
 ### Classify
