@@ -1,8 +1,8 @@
 # Cohere::Ruby
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cohere/ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
+The official SDK for the [Cohere](https://cohere.ai/) API.
 
-TODO: Delete this and the text above, and describe your gem
+Harness the power of language understanding. Join the developers and businesses who are using Cohere to generate, categorize and organize text at a scale that was previously unimaginable.
 
 ## Installation
 
