@@ -71,6 +71,15 @@ See full docs [here](https://docs.cohere.ai/generate-reference).
     client.generate(model: "medium", options: { prompt: "What is your name?" })
 ```
 
+## Response
+
+You can read more about the responses from the endpoints in our official API [docs site](https://docs.cohere.ai/api-reference/).
+
+A struct containing:
+
+- code: `http status code of the request`
+- body: `the body contains a hash with the response body or a message if something went wrong`
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
