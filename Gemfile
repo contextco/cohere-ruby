@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in cohere-ruby.gemspec
+# Specify your gem's dependencies in cohere.gemspec
 gemspec
 
 gem "rake", "~> 13.0"

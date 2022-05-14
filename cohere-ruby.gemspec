@@ -3,7 +3,7 @@
 require_relative "lib/cohere/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "cohere-ruby"
+  spec.name = "cohere"
   spec.version = Cohere::VERSION
   spec.authors = ["Khalil Najjar"]
   spec.email = ["khalil@cohere.ai"]
