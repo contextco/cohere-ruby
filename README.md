@@ -1,8 +1,8 @@
 # Cohere::Ruby
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cohere`. To experiment with that code, run `bin/console` for an interactive prompt.
+The official SDK for the [Cohere](https://cohere.ai/) API.
 
-TODO: Delete this and the text above, and describe your gem
+Harness the power of language understanding. Join the developers and businesses who are using Cohere to generate, categorize and organize text at a scale that was previously unimaginable.
 
 ## Installation
 
@@ -70,6 +70,15 @@ See full docs [here](https://docs.cohere.ai/generate-reference).
 ```ruby
     client.generate(model: "medium", options: { prompt: "What is your name?" })
 ```
+
+## Response
+
+You can read more about the responses from the endpoints in our official API [docs site](https://docs.cohere.ai/api-reference/).
+
+A struct containing:
+
+- code: `http status code of the request`
+- body: `the body contains a hash with the response body or a message if something went wrong`
 
 ## Development
 
